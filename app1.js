@@ -1,8 +1,23 @@
 /**
  Task-1: 
 Write a function to convert temperature from Celsius to Fahrenheit.
+*/
+function celsius(temper){
+    let fahrenheit = temper * (9/5) +32 ;
+    return fahrenheit;
+}
+let fahrenheit = celsius(Number(35));
+document.write( 'Fahrenheit = ', fahrenheit , '<br>');
 
-### Task-2: 
+function fahrenheit_(temper){
+    let celsius = temper;
+    return celsius;
+}
+let celsius_ = fahrenheit_(Number(113));
+document.write( 'Celsius = ', celsius_);
+
+/*
+Task-2: 
 You are given an array of numbers. Count how many times the a number is repeated in the array. 
 
 sample-input: 
