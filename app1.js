@@ -68,17 +68,41 @@ let countVowels = text('a brown fox jump over the the lazy dog');
 document.write( '<br>', countVowels , ' vowels in this string. peo peo <br>');
 
 /**
-### Task-4: 
-Write a function to find the longest word in a given string.
-
+Task-4: 
+    Write a function to find the longest word in a given string.
 sample-input: 
 I am learning Programming to become a programmer
-
 sample-output: Programming
+ */
 
-### Task-5: 
+function myString(myInput){
+    document.write('<br>', myInput , '<br>');
+
+    let myArray = myInput.split(' ');
+    document.write('<br>', myArray ,'<br>');
+
+    let longestWord = ' ';
+    // document.write('longest word length = ', longestWord.length , '<br>');
+
+    for (const word of myArray) {
+        document.write(' ', word ,' ');
+
+        let len = word.length;
+        document.write('length = ' , len , '<br>');
+
+        if(longestWord.length < word.length){
+            longestWord = word;
+        }
+    }
+    return longestWord;
+}
+let longestWordFind = myString('I am learning Programming to become a programmer . okay');
+document.write('Longest Word from my given string = ', longestWordFind , '<br>');
+
+
+/**
+ * Task-5: 
 Generate a random number between 10 to 20.
-
  */
 let random = Math.random();
 let inTeger = (random * 10) ;
