@@ -2,6 +2,7 @@
  Task-1: 
 Write a function to convert temperature from Celsius to Fahrenheit.
 */
+document.write('<br> ------------ Task 1 ---------------- <br>');
 function celsius(temper){
     let fahrenheit = temper * (9/5) +32 ;
     return fahrenheit;
@@ -24,7 +25,17 @@ numbers = [5,6,11,12,98, 5]
 find: 5
 output: 2
  */
-let numbers = [5,6,11,12,98, 5]
+document.write('<br> ------------ Task 2 ---------------- <br>');
+
+let numbers = [5,6,11,12,98, 5];
+let singleOne = 0 ;
+for (const item of numbers) {
+    document.write(' ', item )
+    if(item === 5){
+        singleOne++;
+    }
+}
+document.write('<br> 5 comes here = ', singleOne );
 
 
 /**
@@ -38,13 +49,17 @@ output: 0
 ### Task-3: 
 Write a function to count the number of vowels in a string.
  */
+document.write('<br> ------------ Task 3 ---------------- <br>');
 function text(text_string){
     document.write( '<br>', text_string , '<br>');
+
     text_array = text_string.split('');
     document.write(text_array , '<br>') ;
+
     let count = 0;
     for (const letter of text_array) {
         // document.write(letter , '<br>') ;
+
         if(letter === 'a'){
             count++;
         }
@@ -74,6 +89,7 @@ sample-input:
 I am learning Programming to become a programmer
 sample-output: Programming
  */
+document.write('<br> ------------ Task 4 ---------------- <br>');
 
 function myString(myInput){
     document.write('<br>', myInput , '<br>');
@@ -104,6 +120,7 @@ document.write('Longest Word from my given string = ', longestWordFind , '<br>')
  * Task-5: 
 Generate a random number between 10 to 20.
  */
+document.write('<br> ------------ Task 5 ---------------- <br>');
 let random = Math.random();
 let inTeger = (random * 10) ;
 let upToTen = inTeger +10 ;
